@@ -74,8 +74,8 @@ def main():
                     bot.send_message(chat_id=tg_chat_id, text=message)
                 timestamp = review_response['last_attempt_timestamp']
 
-        except requests.exceptions.ReadTimeout:
-            logger.warning('Нет ответа от сервера')
+#        except requests.exceptions.ReadTimeout:
+#            logger.warning('Нет ответа от сервера')
 
         except requests.exceptions.ConnectionError:
             logger.warning('Потеряно интернет соединение')
